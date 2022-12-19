@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+            background: #b96a6a;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        input{
+            padding: 10px;
+        }
+        button[type=submit]{
+            padding: 10px;
+            outline: none;
+            box-shadow: none;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        div button{
+            padding: 5px;
+            outline: none;
+            box-shadow: none;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <input type="text" id="input-todo" placeholder="Type here">
+        <input type="date" name="" id="due-date">
+        <button type="submit" onclick="addTodo()">Add ToDo</button>
+        <div id="todo-list"></div>
+    </main>
+    <script src="task3.js"></script>
+</body>
+</html>
